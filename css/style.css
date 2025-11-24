@@ -1,0 +1,17 @@
+.wrapper {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr, 10%, 7.5%;
+    grid-template-rows: 10%, 25%, 1fr, 10%;
+    grid-template-areas: 
+    'hd sr nv'
+    'tp tp tp'
+    'mn as as'
+    'ft ft ft';
+}
+
+header {
+    grid-area: hd;
+    display: flex;
+    background-color: #2980b9;
+}
