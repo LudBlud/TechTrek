@@ -22,6 +22,21 @@ header {
     
 }
 
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+header img {
+    height: 100%;
+    cursor: pointer;
+}
+
+.logo-link:hover img {
+    opacity: 0.85;
+}
+
 #searchbararea {
     grid-area: sr;
     display: flex;
@@ -124,6 +139,86 @@ nav {
 
 main {
     grid-area: mn;
+    padding: 20px;
+    
+}
+
+/*Grejen som skapar hierarkin till main*/
+.main-card {
+    background-color: #f2f2f2;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+/*Bilden blir snyggare med lite rundade kanter */
+.main-card img {
+    max-width: 55%;
+    border-radius: 8px;
+}
+
+/*Texten i cardet*/
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main-content h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+    color: #222;
+}
+
+
+.subtitle {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.main-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Design som applicerar på båda knapparna*/
+.left-btn,
+.right-btn {
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: 2px solid #2980b9;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* För knappen till vänster */
+.left-btn {
+    background-color: #2980b9;
+    color: white;
+}
+
+.left-btn:hover {
+    background-color: white;
+    color: #2980b9;
+}
+
+/* och den till höger */
+.right-btn {
+    background-color: white;
+    color: #2980b9;
+}
+
+.right-btn:hover {
+    background-color: #2980b9;
+    color: white;
 }
 
 aside {
@@ -168,6 +263,7 @@ aside h4 {
     font-size: 11px;
     text-align: center;
     transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 .reviewArticles section button:hover,
