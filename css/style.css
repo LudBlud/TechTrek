@@ -110,7 +110,7 @@ nav .NavLink {
     margin: 0;
     font-size: 25px;
     font-weight: 600;
-    color: #222;
+    color: black;
     text-align: center;
 }
 
@@ -125,7 +125,7 @@ nav .NavLink {
     border-radius: 20px;
     border: 2px solid  black;
     background-color: white;
-    color: #2980b9;
+    color: black;
     font-size: 14px;
     font-weight: 500;
     font-family: "Zalando Sans SemiExpanded", sans-serif;  
@@ -236,9 +236,11 @@ aside {
     margin: 10px;
 }
 
-aside h4 {
+aside h2 {
     display: flex;
     justify-content: center;
+    font-size: 17px;
+    margin-top: 20px;
 }
 
 .reviewArticles section{
@@ -255,6 +257,11 @@ aside h4 {
 
 .reviewArticles img {
     height: 45px;
+}
+
+.reviewArticles h3 {
+    font-size: 15px;
+    padding: 10px 0px 10px 0px;
 }
 
 .reviewArticles section button{
