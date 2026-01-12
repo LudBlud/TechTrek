@@ -1,0 +1,242 @@
+.Wrapper {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 1fr 15% 20% 15%;
+    grid-template-rows: 10% 10% 15% 25% 1fr 10%;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    grid-template-areas: 
+    'hd hd hd sr nv'
+    'pd tt tt tt ex'
+    'pd dr dr dr pa'
+    'pd ad ds ds pa'
+    'pd fr fr fr pa'
+    'pd bt bt bt pa';
+}
+
+header {
+    grid-area: hd;
+    display: flex;
+    background-color: #2980b9;
+    
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+header img {
+    height: 100%;
+    cursor: pointer;
+}
+
+.logo-link:hover img {
+    opacity: 0.85;
+}
+
+#searchbararea {
+    grid-area: sr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2980b9;
+}
+
+.searchbar {
+    padding-left: 5px;
+    height: 50px;
+    width: 90%;
+    border-radius: 20px;
+    border-color: black;
+    font-family:"Zalando Sans SemiExpanded", sans-serif;
+}
+
+.searchbar::placeholder{
+    font-family:"Zalando Sans SemiExpanded", sans-serif;
+    padding-left: 5px;
+}
+
+
+nav {
+    grid-area: nv;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #2980b9;
+    padding: 0 20px; 
+}
+
+nav .NavLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-size: 14px;
+    padding: 10px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 80px; 
+    text-align: center;
+}
+
+
+.nav-btn:hover,
+.nav-btn:focus {
+    background-color: white;
+    color: #2980b9;
+}
+
+.padding1 {
+    grid-area: pd;
+    background-color: white;
+}
+
+.padding2{
+    grid-area: pa;
+    background-color: white;
+}
+
+#exit {
+    grid-area: ex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#exit .exitLink{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.exitLink img {
+    height: 20px;
+}
+
+.titleContainer {
+    grid-area: tt;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.titleContainer h2 {
+    font-family:"Zalando Sans SemiExpanded", sans-serif;
+    color: black;
+}
+
+.ProductSelection {
+    grid-area: dr;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ProductSelection button {
+    height: 100px;
+    width: 200px;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.ProductSelection button:hover{
+    background-color: #f2f2f2;
+    color: black;
+    transition: ease 0.2s;
+}
+
+.ProductSelection button:active {
+    background-color: #2980b9;
+    color: white;
+    transition: ease 0.05s;
+}
+
+.advantagesContainer {
+    grid-area: ad;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.advantagesContainer input {
+    padding: 10px;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    background-color: #f2f2f2;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.disadvantagesContainer {
+    grid-area: ds;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+.disadvantagesContainer input {
+    padding: 10px;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    background-color: #f2f2f2;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.fritext {
+    grid-area: fr;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin-top: 40px;
+}
+
+.fritext textarea {
+    height: 175px;
+    width: 1275px;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    background-color: #f2f2f2;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.buttonContainer {
+    grid-area: bt;
+    display: flex;
+    align-items: center;
+}
+
+.buttonContainer button {
+    background-color: #2980b9;
+    color: white;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    cursor: pointer;
+}
+
+.buttonContainer button:hover {
+    background-color: white;
+    color: black;
+    transition: ease 0.2s;
+}

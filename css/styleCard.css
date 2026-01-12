@@ -66,6 +66,12 @@ nav {
     padding: 0 20px; 
 }
 
+nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
 .nav-btn {
     background: transparent;
     border: none;
@@ -76,7 +82,7 @@ nav {
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.2s ease;
-    width: 120px; 
+    width: 80px; 
     text-align: center;
 }
 
@@ -176,6 +182,7 @@ nav {
 
 .buttonContainer button:hover {
     background-color: #2980b9;
+    color: #f2f2f2;
     transition: ease 0.2s;
 }
 
@@ -199,6 +206,38 @@ nav {
 footer {
     grid-area: ft;
     background-color: #2980b9;
-    padding: 0 30 0 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
 }
+
+   .email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   }
+
+   .telephone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   }
+
+
+
+
+
+
+.email img {
+        height: 40px;
+    }
+
+    .telephone img {
+        height: 40px;
+    }
 

@@ -79,10 +79,15 @@ nav {
     border-radius: 20px;
     cursor: pointer;
     transition: all 0.2s ease;
-    width: 120px; 
+    width: 80px; 
     text-align: center;
 }
 
+nav .NavLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
 
 .nav-btn:hover,
 .nav-btn:focus {
@@ -274,4 +279,38 @@ aside h4 {
 
 footer {
     grid-area: ft;
+    background-color: #2980b9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
 }
+
+   .email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   }
+
+   .telephone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   }
+
+
+
+
+
+
+.email img {
+        height: 40px;
+    }
+
+    .telephone img {
+        height: 40px;
+    }
